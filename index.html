@@ -8,38 +8,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css"> <!-- Link to your CSS file -->
 </head>
+
+<section id="Header Navigator">
 <body>
-   
+
     <header>
         <h1>Anna's Portfolio</h1>
         <nav>
-            <ul> <!--website navigation can be added later-->
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <table border="1">
+                <tr>
+                    <th><a href="About-section">About Me</a></th>
+                    <th><a href="#artworks-section"> Artwork </a></th>
+                    <th><a href="#Contact-section">Contact Me</a></th>
+                </tr>
+                </table>
         </nav>
     </header>
-
+</section>
+    
+<section id="About me"></section>
     <main>
-        <h2>Hello i'm Anna >:D </h2>
-        <p>This website features my portfolio collection and a littl a bit about me.</p>
+          
+        <h2 id="#About-section">About me</h2>
+        <p>Hello! I'm Anna, i'm a hobby artist currenly studying to hopefully work as a graphic designer in the near future.
+        This website is to somecase some of my artworks. </p>
+       
         <head>
-            <title> Artworks </title>
+          </section>   
+            <section id="Artwork">
+          <title> Artworks </title>
         </head>
         <body>
-            <h1>Artworks</h1>
-            <p>"Devil's Daugther" created in 2019.</p>
-            <img src="Images/devil's daughter.jpg" alt="artwork of a girl with red eyes and a wound in her chest">
-        
-            <p> "Crying Angel" created in 2021 </p>
-            <img src="Images/world tree.jpg" alt="Artwork of angel crying in snowy field.">
+            <h1 id="artworks-section"> Artworks</h1>
+                <h2>"Devil's Daugther"</h2>
+                <p> Created in 2019.</p>
+                <img class="resized" src="Images/devil's daughter.jpg" alt="artwork of a girl with red eyes and a wound in her chest">
+
+                <h2>"Crying Angel"</h2>
+                <p> Created in 2021. My first piece after a 2 year break. </p>
+                <img class="resized" src="Images/world tree.jpg" alt="Artwork of angel crying in snowy field.">
         </body>
     </main>
+</section>
+   
 
+<section id="contact me">
+    <main> 
+        <body>
+            <header>Contact</header>
+            <h1 id="Contact-section"> Contact Info</h1>
+            <h3> <a href="https://www.instagram.com/boba_liu/?next=%2F">Instagram </a></h3>
+            <p> My current art accounts are unavalible </p>
+
+            
+            <h3> <a href="https://www.pinterest.ca/haiitssin/">Pinterest </a></h3>
+            <p>Boards for inspiration</p>
+        </body>
+    </main>
+</section>
+   
     <footer>
         <p>&copy; 2023 Anna Liu</p>
     </footer>
 </body>
+
 </html>
