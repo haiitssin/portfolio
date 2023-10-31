@@ -1,0 +1,56 @@
+/* Define styles for the body element */
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #545454;
+}
+
+/* Define styles for headings (h1, h2, h3, etc.) */
+h1 {
+    color: #93b6c9;
+}
+
+h2 {
+    color: #965f93;
+}
+
+/* Define styles for links (anchor tags) */
+a {
+    color: #36596c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Define styles for an element with the ID "header" */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+/* centering the stuff on the page */
+.content-wrapper{
+    padding: 10px 30px;
+}
+p{
+    text-align: justify;
+}
+h1{
+    text-align: center;
+}
+.highlight{
+    font-weight: 700;
+    color: forestgreen;
+}
+h1, h2{
+    font-weight: 400;
+}
+
+ul li{
+    list-style-type: square;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
