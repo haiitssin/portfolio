@@ -1,33 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Anna's portfolio
-    </title>
-    <meta name="Anna's portfolio collection" content="My collection of art works">
+    <title>Anna's Portfolio</title>
+    <meta name="description" content="My collection of artworks">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css.stylesheet"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-    <header>
-        <h1>Your Website Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section id="Header-Navigator">
+        <header>
+            <h1>Anna's Portfolio</h1>
+            <nav>
+                <table>
+                    <tr>
+                        <td><a href="#About-section">About Me</a></td>
+                        <td><a href="#Artwork-section">Artwork</a></td>
+                        <td><a href="#Contact-section">Contact Me</a></td>
+                    </tr>
+                </table>
+            </nav>
+        </header>
+    </section>
 
     <main>
-        <h2>Welcome to our website</h2>
-        <p>This is the main content of your webpage.</p>
+        <section id="About-section">
+            <h2>About me</h2>
+            <p>Hello! I'm Anna, a hobby artist currently studying to hopefully work as a graphic designer in the near future. This website is to showcase some of my artworks.</p>
+        </section>
+
+        <section id="Artwork-section">
+            <h1>Artworks</h1>
+            <h2>"Devil's Daughter"</h2>
+            <p>Created in 2019.</p>
+            <img class="resized" src="Images/devil's-daughter.jpg" alt="Artwork of a girl with red eyes and a wound in her chest">
+
+            <h2>"Crying Angel"</h2>
+            <p>Created in 2021. My first piece after a 2-year break.</p>
+            <img class="resized" src="Images/crying-angel.jpg" alt="Artwork of an angel crying in a snowy field.">
+        
+            <h2>"Crying Angel"</h2>
+            <p>Artwork inspired by Edgar Allan Poe's poem The Raven.</p>
+            <img class="resized" src="Images/The-Raven.jpg" alt="Artwork for a book cover with a black crow and shadowy man.">
+        
+            <h2>"Crying Angel"</h2>
+            <p>Artwork inspired by Edgar Allan Poe's story The Tell-Tale Heart.</p>
+            <img class="resized" src="Images/Tell-Tale.jpg" alt="Artwork of a human heart made out of floorboards with a eye in the center.">
+        
+            <h2>"Crying Angel"</h2>
+            <p>Artwork inspired by Edgar Allan Poe's story Ligeia</p>
+            <img class="resized" src="Images/Ligeia.jpg" alt="Artwork of for a book cover with a pale woman with black hair and eyes wearing a white dress.">
+        </section>
     </main>
 
+    <section id="Contact-section">
+        <header>
+            <h1>Contact Info</h1>
+        </header>
+        <p class="center-text"><a href="https://www.instagram.com/boba_liu/?next=%2F">Instagram</a></p>
+        <p class="center-text">My current art accounts are unavailable.</p>
+        <p class="center-text"><a href="https://www.pinterest.ca/haiitssin/">Pinterest</a></p>
+        <p class="center-text">Boards for inspiration.</p>
+    </section>
+   
     <footer>
-        <p>&copy; 2023 Your Website Name</p>
+        <p class="center-text">&copy; 2023 Anna Liu</p>
     </footer>
 </body>
 </html>

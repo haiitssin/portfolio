@@ -1,0 +1,94 @@
+/* Define styles for the body element */
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #545454;
+}
+
+/* Define styles for headings (h1, h2, h3, etc.) */
+h1 {
+    color: #93b6c9;
+}
+
+h2 {
+    color: #965f93;
+}
+
+/* Define styles for links (anchor tags) */
+a {
+    color: #36596c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Define styles for an element with the ID "header" */
+#header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+/* centering the stuff on the page */
+.content-wrapper{
+    padding: 10px 30px;
+}
+p{
+    text-align: justify;
+}
+h1{
+    text-align: center;
+}
+.highlight{
+    font-weight: 700;
+    color: forestgreen;
+}
+h1, h2{
+    font-weight: 400;
+}
+
+ul li{
+    list-style-type: square;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+/*centering the table */
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 3px solid #64858a;
+}
+tr:hover {
+    background-color: #0077b6;
+    color: #fff;
+}
+/* Resize an image by writing class="resized"*/
+img.resized {
+    width: 300px; /* Set the desired width in pixels */
+    height: auto; /* Allow the height to adjust proportionally based on the width */
+}
+
+
+img.resized-height {
+    height: 500px; /* Set the desired height in pixels */
+    width: auto; /* Allow the width to adjust proportionally based on the height */
+}
+
+nav table {
+    margin: 0 auto; /* Center the table horizontally */
+}
+
+nav td {
+    text-align: center; /* Center the text horizontally within table cells */
+}
+.center-text {
+    text-align: center;
+}
