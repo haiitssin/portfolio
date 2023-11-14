@@ -1,3 +1,4 @@
+/*testing a bunch of css stuff, some might not apply yet. Code is similar to java*/
 /* Define styles for the body element */
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -70,6 +71,8 @@ tr:hover {
     background-color: #0077b6;
     color: #fff;
 }
+
+/*classes*/
 /* Resize an image by writing class="resized"*/
 img.resized {
     width: 300px; /* Set the desired width in pixels */
@@ -81,6 +84,28 @@ img.resized-height {
     height: 500px; /* Set the desired height in pixels */
     width: auto; /* Allow the width to adjust proportionally based on the height */
 }
+/* centering pictures */
+img.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+.center-text {
+    text-align: center;
+}
+/*space on the outside border*/
+.element-with-margin {
+    margin: 20px; 
+  }
+/*spaceing for inside the border */
+  .element-with-padding {
+    padding: 20px; 
+  }
+/*spacing between elements */
+  .space-between-elements {
+    margin-bottom: 100px; 
+  }
+
 
 nav table {
     margin: 0 auto; /* Center the table horizontally */
@@ -89,6 +114,22 @@ nav table {
 nav td {
     text-align: center; /* Center the text horizontally within table cells */
 }
-.center-text {
-    text-align: center;
-}
+
+.flex-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center; /* Adjust as needed */
+    padding: 10px; /* Adjust as needed */
+    border: 1px solid #ccc; /* Optional: Add borders for visual separation */
+  }
+  
+  .flex-container p {
+    margin: 0;
+  }
+  
+  
