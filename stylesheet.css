@@ -15,7 +15,7 @@ h2 {
     color: #965f93;
 }
 
-/* Define styles for links (anchor tags) */
+/* Define styles for links */
 a {
     color: #36596c;
     text-decoration: none;
@@ -25,6 +25,9 @@ a:hover {
     text-decoration: underline;
 }
 
+section#Contact-section {
+color: #b8a4a4;
+}
 /* Define styles for an element with the ID "header" */
 #header {
     background-color: #333;
@@ -44,7 +47,7 @@ h1{
 }
 .highlight{
     font-weight: 700;
-    color: forestgreen;
+    color: rgb(211, 108, 134);
 }
 h1, h2{
     font-weight: 400;
@@ -61,15 +64,16 @@ table {
     margin-right: auto;
 }
 table {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     margin: 20px 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: 3px solid #64858a;
+    border: 3px dotted rgb(255, 183, 183);
+    background-color: rgb(255, 152, 115);
 }
 tr:hover {
-    background-color: #0077b6;
-    color: #fff;
+    background-color: #ffece4;
+    color: #ffff;
 }
 
 /*classes*/
@@ -93,9 +97,11 @@ img.center-image {
 .center-text {
     text-align: center;
 }
+
+
 /*space on the outside border*/
-.element-with-margin {
-    margin: 20px; 
+.add-margin {
+    margin: 30px; 
   }
 /*spaceing for inside the border */
   .element-with-padding {
@@ -106,7 +112,6 @@ img.center-image {
     margin-bottom: 100px; 
   }
 
-
 nav table {
     margin: 0 auto; /* Center the table horizontally */
 }
@@ -115,21 +120,76 @@ nav td {
     text-align: center; /* Center the text horizontally within table cells */
 }
 
-.flex-table {
-    width: 100%;
-    border-collapse: collapse;
+body, html {
+    margin: 0;
+    padding: 0;
   }
   
   .flex-container {
     display: flex;
-    justify-content: space-between; /* Adjust as needed */
-    align-items: center; /* Adjust as needed */
-    padding: 10px; /* Adjust as needed */
-    border: 1px solid #ccc; /* Optional: Add borders for visual separation */
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+
+  
+  header, main, footer {
+    padding: 20px;
+    border: 6px outset rgb(255, 152, 115);; /* Optional: Add borders for visual separation */
   }
   
-  .flex-container p {
-    margin: 0;
+  header {
+    background-color: rgb(255, 255, 255);
   }
   
+  main {
+    flex-grow: 1; 
+    background-color: #ffffff;
+  }
   
+  footer {
+    background-color: rgb(255, 152, 115);
+    color: #ffff;
+  }
+  
+ 
+ 
+ /*animation for fun */
+  @keyframes LogoAni {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 50%;
+    }
+  
+    10% {
+      transform: rotate(8deg);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: rotate(-10deg);
+    }
+  
+    30%,
+    50%,
+    70% {
+      transform: rotate(10deg);
+    }
+  
+    80% {
+      transform: rotate(-8deg);
+    }
+  
+    90% {
+      transform: rotate(8deg);
+    }
+  }
+  
+  .img-animation {
+    animation: LogoAni 2s; /* Adjust the duration and iteration count as needed */
+  }
