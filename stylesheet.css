@@ -71,10 +71,31 @@ table {
     border: 3px dotted rgb(255, 183, 183);
     background-color: rgb(255, 152, 115);
 }
+/* 2x2 for artwork section */
+
+.artwork-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.artwork-item {
+  width: 48%; 
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .artwork-item {
+      width: 100%; /* adapts to window size*/ 
+  }
+}
+/*changes cover when hovering over table*/
 tr:hover {
-    background-color: #ffece4;
+    background-color: #e4ffe4;
     color: #ffff;
 }
+
+
 
 /*classes*/
 /* Resize an image by writing class="resized"*/
@@ -82,7 +103,6 @@ img.resized {
     width: 300px; /* Set the desired width in pixels */
     height: auto; /* Allow the height to adjust proportionally based on the width */
 }
-
 
 img.resized-height {
     height: 500px; /* Set the desired height in pixels */
@@ -125,6 +145,7 @@ body, html {
     padding: 0;
   }
   
+  /* the flex container*/
   .flex-container {
     display: flex;
     flex-direction: column;
@@ -138,7 +159,7 @@ body, html {
   
   header, main, footer {
     padding: 20px;
-    border: 6px outset rgb(255, 152, 115);; /* Optional: Add borders for visual separation */
+    border: 6px outset rgb(255, 152, 115);
   }
   
   header {
@@ -155,7 +176,9 @@ body, html {
     color: #ffff;
   }
   
- 
+
+
+
  
  /*animation for fun */
   @keyframes LogoAni {
