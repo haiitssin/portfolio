@@ -1,2 +1,3 @@
 # portfolio >:D
-Right now I am testing using a stylesheet as well to organize everything easier and make it look nicer. 
+CSS was already on my main branch so I did not work on a new branch for this one. 
+I implemented the stylesheet fully. Please just ignore the JS tests, it should only be connected to my javascript branch. 
