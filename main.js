@@ -1,32 +1,100 @@
-//global "scope", variables avalible to all//
-let lastname = "Liu"; 
-const firstname = "Anna"; //const is so that it does change
-let age = "25"; 
+// Add an event listener to the button with the ID "btn-alert"
 
-let namelist = "huh";
-const fullname = (first, last) => {
-    console.log("first, last");
-    console.log(first + "s favourite drink is milk")
-    console.log(`${first}'s favourite drink is milk`) //does same thing but anotehr way to write it//
-let veggie = "cucumber"; //local scope, only used withint he brackets//
-}
-//if else statements//
-if (firstname){
-    console.log("omg its true!")
-}
-const nameslist = "9";
-namesList.pop();
-fullname("Stephen", "P");
-fullname("Magic", "Meow Meow");
 
-//for loop//
-for(let counter = 0; counter < 4; counter = counter + 1){
-    fullname(namelist,{counter});
+document.getElementById('btn-alert').addEventListener('click', function() {
+    // Display an alert when the button is clicked
+    alert('(=˃ᆺ˂=) Meow');
+});
 
-}
-//whtie loop//
-let j = 0;
-while (j < namelist.length) {
-    fullname(namesList(j)); 
+// Eventlister makes things do thing when button is clicked
+// Get the button element by ID
+const button = document.getElementById('btn-alert');
+
+
+button.addEventListener('mouseover', function() {
+    // Change the button label on mouseover
+    button.innerText = 'Meow Meow! ᨐฅ';
+});
+
+
+button.addEventListener('mouseleave', function() {
+    // Revert the button label when not hover 
+    button.innerText = 'Meow?';
+});
+//new variable that will find the year 
+const currentyear = new Date().getFullYear(); 
+document.getElementById('footer').innerText = `© ${currentyear} Anna Liu`;
+
+
+let count = 1;
+
+// button and paragraph elements varibles by ID 
+const buttonfeed = document.getElementById('btn-counter');
+const counterText = document.getElementById('txt-counter');
+const numbersList = document.getElementById('numbers');
+const counterButton = document.getElementById('btn-counter');
+const numbersButton = document.getElementById('btn-counter');
+
+
+
+// Add event listener for new button 
+buttonfeed.addEventListener('click', function() {
     
-} //idk what's happening T^T
+count = count + 1;// makes it count up by 1
+
+    // Update the text of for <p> 
+    counterText.innerHTML = 'You have fed him: ' + count + ' times! (=ↀωↀ=)';
+
+    /// changes color is it's odd or even. % mean remainder
+    if (count % 2 === 0) {
+        console.log('Even')
+         counterText.classList.remove('odd');
+         counterText.classList.add('even');
+     } else {
+         console.log('Odd')
+         counterText.classList.remove('even');
+         counterText.classList.add('odd');
+     };
+
+     /// He's getting fat lol 
+     if (count > 20){
+        counterText.innerHTML =  'I think he is gaining weight... '+ count + ' (=ಠᆽಠ=)';
+     }
+     else {
+
+     }
+     if (count > 50){
+        counterText.innerHTML =  'Pls stop...'+ count + ' [^._.^]ﾉ';
+     }
+     else {
+
+     }
+     if (count > 80){
+        counterText.innerHTML =  'Knock knock, your therapist is at your door ^._.^ฅ '+ count;
+     }
+     else {
+
+     }
+
+     if (count > 100){
+        counterText.innerHTML =  'You are banned from feeding the cat  -ꞈ- ';
+     }
+     else {
+
+     }
+
+    //hide the ordered list
+    numbersList.style.display = 'none';
+
+});
+
+// when the button is click... it will...
+numbersButton.addEventListener('click', function () {
+   
+    for (let i = 1; i <= 100; i++) { ///This will display the number and if it is even or odd into console
+        console.log(`Item ${i}: Number ${count}, ${i % 2 === 0 ? 'Even' : 'Odd'}`);
+    }
+});
+
+
+

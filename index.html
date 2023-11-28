@@ -6,14 +6,19 @@
     <meta name="description" content="My collection of artworks">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-<script src="main.js"> </script> <!--linking the js-->
+    <style> 
+        #btnalert {
+            padding: 10px;
+            cursor:pointer; 
+        }
+    </style>
 </head>
 <body>
     <div class="flex-container">
         <section id="Header-Navigator">
             <header>
                 <img class="img-animation" src="Images/Logo.png" alt="Orange logo that says Anna">
-               <h1> Anna's Portfolio </h1>
+                <h1> Anna's Portfolio </h1>
                 <nav>
                     <table class="add-margin">
                         <tr>
@@ -26,19 +31,17 @@
             </header>
         </section>
 
+        <main>
+            <section id="About-section" class="content-section">
+                <h1>About me</h1>
+                <p class="center-text"> Welcome! I'm a hobby artist currently studying to major in Graphic Design. Here are some of my art works!</p>
+            </section>
+            <div class="space-between-elements"></div>
 
-<main>
-    <section id="About-section" class="content-section">
-        <h1>About me</h1>
-<p class="center-text"> Welcome! I'm a hobby artist currently studying to major in Graphic Design. Here are some of my art works!</p>
-        
-    </section>
-   <div class="space-between-elements"></div>
-   
-    <section id="Artwork-section" class="content-section">
-        <h1 class="highlight">Artworks</h1>
+            <section id="Artwork-section" class="content-section">
+                <h1 class="highlight">Artworks</h1>
 
-        <div class="artwork-grid">
+                <div class="artwork-grid">
             <div class="artwork-item">
                 <h2>"Devil's Daughter"</h2>
                 <p>Created in 2019.</p>
@@ -67,20 +70,24 @@
 </main>
 
 
-        <section id="Contact-section">
-            <header>
-                <h1>Contact Info</h1>
-                <p class="center-text"><a href="https://www.instagram.com/boba_liu/?next=%2F">Instagram</a></p>
-                <p class="center-text">My current art accounts are unavailable.</p>
-                <p class="center-text"><a href="https://www.pinterest.ca/haiitssin/">Pinterest</a></p>
-                <p class="center-text">Boards for inspiration.</p>
-            </header>
-        </section>
+<section id="Contact-section">
+    <header>
+        <h1>Contact Info</h1>
+        <p class="center-text"><a href="https://www.instagram.com/boba_liu/?next=%2F">Instagram</a></p>
+        <p class="center-text">My current art accounts are unavailable.</p>
+        <p class="center-text"><a href="https://www.pinterest.ca/haiitssin/">Pinterest</a></p>
+        <p class="center-text">Boards for inspiration.</p>
+    </header>
+</section>
 
-        <footer>
-            <p class="center-text">&copy; 2023 Anna Liu</p>
-        </footer>
-    </div>
+<footer>
+    <p class="center-text">&copy; 2023 Anna Liu <span id="current-year"></span></p>
+</footer>
+</div>
+
+<!-- Link to external JavaScript file -->
+<script src="main.js"></script>
+
 </body>
 </html>
 
